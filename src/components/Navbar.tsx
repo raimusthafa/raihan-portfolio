@@ -23,7 +23,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md py-4 px-6 shadow-sm flex justify-between items-center">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-black/65 backdrop-blur-md py-4 px-6 shadow-sm flex justify-between items-center">
         <h1 className="text-xl font-bold text-emerald-800 dark:text-emerald-400">Raihan</h1>
 
         <div className="flex items-center gap-2">

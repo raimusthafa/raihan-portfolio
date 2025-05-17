@@ -10,10 +10,10 @@ export function HeroSection({ isDarkMode }: { isDarkMode: boolean }) {
 
   return (
     <section className="relative h-[100vh] items-center justify-center overflow-hidden">
+     
       <BackgroundBeamsWithCollision className="relative z-0">
-        <Spotlight className="absolute inset-0 z-0 opacity-20" />
+        <Spotlight className="absolute inset-0 z-0 opacity-20" isDarkMode={isDarkMode}/>
       </BackgroundBeamsWithCollision>
-
       <div className="relative z-20 text-center -translate-y-3 md:-translate-y-6">
         <h1 className="text-4xl md:text-6xl font-bold text-emerald-800 dark:text-emerald-400">
           Raihan Musthafa Kamal

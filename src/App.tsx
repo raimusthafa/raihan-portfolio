@@ -36,7 +36,7 @@ function App() {
   }, [isDarkMode]);
 
   return (
-    <div className="bg-[#f3fdf6] text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen transition-colors duration-300">
+    <div className="bg-[#f3fdf6] text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
       <main>
         <HeroSection isDarkMode={isDarkMode} />
