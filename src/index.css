@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme inline {
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
 }
@@ -14,3 +16,5 @@
     transform: translate(-50%, -40%) scale(1);
   }
 }
+
+
