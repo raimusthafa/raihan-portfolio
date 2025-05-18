@@ -10,7 +10,7 @@ export function HeroSection({ isDarkMode }: { isDarkMode: boolean }) {
 
 const gradientClass = isDarkMode
   ? "from-teal-400 via-green-400 to-lime-300"
-  : "from-emerald-700 via-teal-600 to-green-500";
+  : "from-red-500 to-green-500";
 
 
   return (
@@ -21,10 +21,10 @@ const gradientClass = isDarkMode
         {/* isDarkMode={isDarkMode} */}
       </BackgroundBeamsWithCollision>
       <div className="relative z-20 text-center -translate-y-3 md:-translate-y-6">
-        <h1 className="text-4xl md:text-6xl font-bold text-emerald-600 dark:text-emerald-400">
+        <h1 className="mx-2 text-4xl md:text-6xl font-bold text-emerald-600 dark:text-emerald-400">
           Raihan Musthafa Kamal
         </h1>
-        <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))] font-semibold text-2xl">
+        <div className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))] font-semibold text-xl md:text-2xl">
           <div className="absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 ${gradientClass} [text-shadow:0_0_rgba(0,0,0,0.1)]">
             <span className="">Fullstack Developer Frontend-Focused</span>
           </div>
