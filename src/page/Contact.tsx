@@ -70,7 +70,7 @@ export default function Contact() {
         </div>
 
         {/* Kanan: Form */}
-        <div className="p-6 border border-emerald-200 dark:border-emerald-800 dark:bg-gray-900 rounded-lg shadow">
+        <div className="p-6 border bg-gray-50 border-emerald-200 dark:border-emerald-800 dark:bg-gray-900 rounded-lg shadow">
           <h2 className="text-2xl font-bold mb-4 text-center">Contact Me</h2>
 
           <form ref={formRef} onSubmit={sendEmail} className="space-y-4">

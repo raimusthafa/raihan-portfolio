@@ -25,7 +25,7 @@ export function StatsSection() {
     <section className="py-16 px-10 md:px-20 mx-auto">
       <div className="grid md:grid-cols-3 gap-6">
         {stats.map((stat, index) => (
-          <Card key={index} className="transition hover:scale-[1.02] shadow-md border-emerald-100 dark:border-emerald-800">
+          <Card key={index} className="transition hover:scale-[1.02] bg-gray-50 dark:bg-gray-900 shadow-md border-emerald-100 dark:border-emerald-800">
             <CardContent className="p-6 space-y-2">
               <div>{stat.icon}</div>
               <h3 className="text-lg font-semibold text-gray-800 dark:text-white">{stat.title}</h3>

@@ -8,7 +8,7 @@ export function AboutSection() {
     <section id="about" className="py-16 px-4 md:px-20 mx-auto">
       <h2 className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 pb-8">About Me</h2>
 
-      <Card className="dark:bg-gray-900 shadow-xl border border-emerald-200 dark:border-emerald-800">
+      <Card className="bg-gray-50 dark:bg-gray-900 shadow-xl border border-emerald-200 dark:border-emerald-800">
         <CardHeader className="flex flex-row items-center gap-4">
           <Avatar className="w-16 h-16">
             <AvatarImage src="/me.jpg" alt="My profile" />
