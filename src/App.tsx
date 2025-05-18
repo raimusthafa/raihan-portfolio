@@ -2,9 +2,11 @@ import { useState, useEffect } from "react";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
 import { AboutSection } from "./page/About";
-import { ContactSection } from "./page/Contact";
 import { HeroSection } from "./page/HeroSection";
 import { ProjectsSection } from "./page/Project";
+import { StatsSection } from "./page/Stats";
+import ContactSection from "./page/Contact";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -40,11 +42,13 @@ function App() {
       <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
       <main>
         <HeroSection isDarkMode={isDarkMode} />
+        <StatsSection />
         <AboutSection />
         <ProjectsSection />
         <ContactSection />
       </main>
       <Footer />
+      <Toaster position="top-center" />
     </div>
   );
 }

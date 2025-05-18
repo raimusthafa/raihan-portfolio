@@ -54,7 +54,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "-100%", opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[64px] left-0 w-full bg-white dark:bg-black z-40 shadow-md flex flex-col items-center gap-4 py-4 md:hidden"
+            className="fixed top-[64px] left-0 w-full bg-white dark:bg-black/65 z-40 shadow-md flex flex-col items-center gap-4 py-4 md:hidden"
           >
             <Button variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
             <Button variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>
