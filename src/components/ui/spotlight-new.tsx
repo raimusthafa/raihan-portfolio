@@ -21,16 +21,16 @@ export const Spotlight = ({
   xOffset = 100,
 }: SpotlightProps) => {
   const gradientFirst = isDarkMode
-    ? "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(210, 100%, 85%, .08) 0, hsla(210, 100%, 55%, .02) 50%, hsla(210, 100%, 45%, 0) 80%)"
-    : "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(220, 80%, 10%, .2) 0, hsla(220, 80%, 20%, .1) 50%, hsla(220, 80%, 30%, 0) 80%)";
+  ? "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(210, 100%, 85%, .08) 0, hsla(210, 100%, 55%, .02) 50%, hsla(210, 100%, 45%, 0) 80%)"
+  : "radial-gradient(68.54% 68.72% at 55.02% 31.46%, hsla(220, 80%, 10%, .08) 0, hsla(220, 80%, 20%, .04) 50%, hsla(220, 80%, 30%, 0) 80%)";
 
-  const gradientSecond = isDarkMode
-    ? "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
-    : "radial-gradient(50% 50% at 50% 50%, hsla(220, 80%, 10%, .1) 0, hsla(220, 80%, 20%, .05) 80%, transparent 100%)";
+const gradientSecond = isDarkMode
+  ? "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .06) 0, hsla(210, 100%, 55%, .02) 80%, transparent 100%)"
+  : "radial-gradient(50% 50% at 50% 50%, hsla(220, 80%, 10%, .06) 0, hsla(220, 80%, 20%, .03) 80%, transparent 100%)";
 
-  const gradientThird = isDarkMode
-    ? "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
-    : "radial-gradient(50% 50% at 50% 50%, hsla(220, 80%, 10%, .08) 0, hsla(220, 80%, 20%, .04) 80%, transparent 100%)";
+const gradientThird = isDarkMode
+  ? "radial-gradient(50% 50% at 50% 50%, hsla(210, 100%, 85%, .04) 0, hsla(210, 100%, 45%, .02) 80%, transparent 100%)"
+  : "radial-gradient(50% 50% at 50% 50%, hsla(220, 80%, 10%, .04) 0, hsla(220, 80%, 20%, .02) 80%, transparent 100%)";
 
   return (
     <motion.div
