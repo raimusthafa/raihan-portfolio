@@ -15,9 +15,9 @@ const gradientClass = isDarkMode
 
   return (
     <section className="relative h-[100vh] items-center justify-center overflow-hidden">
-     
+     <Spotlight height={3000} isDarkMode={isDarkMode}/>
       <BackgroundBeamsWithCollision className="relative z-0">
-        <Spotlight height={3000} isDarkMode={isDarkMode}/>
+        <span></span>
         {/* isDarkMode={isDarkMode} */}
       </BackgroundBeamsWithCollision>
       <div className="relative z-20 text-center -translate-y-3 md:-translate-y-6">
