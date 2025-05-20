@@ -10,7 +10,7 @@ export function HeroSection({ isDarkMode }: { isDarkMode: boolean }) {
 
 const gradientClass = isDarkMode
   ? "from-teal-400 via-green-400 to-lime-300"
-  : "from-red-500 to-green-500";
+  : "from-red-400 to-green-500";
 
 
   return (
