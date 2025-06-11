@@ -7,6 +7,7 @@ import { ProjectsSection } from "./page/Project";
 import { StatsSection } from "./page/Stats";
 import ContactSection from "./page/Contact";
 import { Toaster } from "react-hot-toast";
+import Experience from "./page/Experience";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -44,6 +45,7 @@ function App() {
         <HeroSection isDarkMode={isDarkMode} />
         <StatsSection />
         <AboutSection />
+        <Experience />
         <ProjectsSection />
         <ContactSection />
       </main>

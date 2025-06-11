@@ -4,6 +4,8 @@ import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
 import { PointerHighlightDemo } from "@/components/textpointer";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { BorderBeam } from "@/components/magicui/border-beam";
 
 export default function Contact() {
   const formRef = useRef<HTMLFormElement>(null);
@@ -48,7 +50,6 @@ export default function Contact() {
         <div className="space-y-6">
           <PointerHighlightDemo />
           <div>
-            <h3 className="text-xl font-semibold">Let's Connect</h3>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
               I'm always open to discussing new opportunities, collaboration, or just chatting.
 
@@ -70,10 +71,16 @@ export default function Contact() {
         </div>
 
         {/* Kanan: Form */}
-        <div className="p-6 border bg-gray-50 border-emerald-200 dark:border-emerald-800 dark:bg-gray-900 rounded-lg shadow">
-          <h2 className="text-2xl font-bold mb-4 text-center">Contact Me</h2>
-
-          <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
+      
+     <Card className="relative overflow-hidden border border-gray-200 dark:border-gray-700">
+      <CardHeader>
+        <CardTitle className="text-xl font-semibold">Lets Connect</CardTitle>
+        <CardDescription className="text-gray-600 dark:text-gray-300 text-base">
+          Enter your massage.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
             <input
               type="text"
               name="name"
@@ -96,7 +103,7 @@ export default function Contact() {
             ></textarea>
             <button
   type="submit"
-  className="bg-black text-white dark:bg-emerald-400 dark:text-black font-medium px-4 py-2 rounded dark:hover:bg-emerald-400/90 hover:bg-gray-800 w-full flex items-center justify-center gap-2"
+  className="bg-black text-white dark:bg-white dark:text-gray-800 font-medium px-4 py-2 rounded dark:hover:bg-emerald-400/90 hover:bg-gray-800 w-full flex items-center justify-center gap-2"
   disabled={loading}
 >
   {loading && (
@@ -124,8 +131,21 @@ export default function Contact() {
   {loading ? "Sending..." : "Send Message"}
 </button>
           </form>
+      </CardContent>
+            <BorderBeam
+        duration={6}
+        size={400}
+        className="from-transparent via-purple-600 to-transparent"
+      />
+      <BorderBeam
+        duration={6}
+        delay={3}
+        size={400}
+        className="from-transparent via-pink-600 to-transparent"
+      />
+    </Card>
         </div>
       </div>
-    </div>
+
   );
 }

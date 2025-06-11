@@ -28,15 +28,15 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
 
         <div className="flex items-center gap-2">
           {/* Dark Mode Toggle */}
-          <Button variant="ghost" size="icon" onClick={toggleDarkMode}>
+          <Button className="cursor-pointer" variant="ghost" size="icon" onClick={toggleDarkMode}>
             {isDarkMode ? <Sun size={18} /> : <Moon size={18} />}
           </Button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-4">
-            <Button variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
-            <Button variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>
-            <Button variant="ghost" onClick={() => scrollToSection("contact")}>Contact</Button>
+            <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
+            <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>
+            <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("contact")}>Contact</Button>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -54,7 +54,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "-100%", opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="fixed top-[64px] left-0 w-full bg-white dark:bg-black/65 z-40 shadow-md flex flex-col items-center gap-4 py-4 md:hidden"
+            className="fixed top-[64px] left-0 w-full bg-white/80 dark:bg-black/65 z-40 shadow-md flex flex-col items-center gap-4 py-4 md:hidden"
           >
             <Button variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
             <Button variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>

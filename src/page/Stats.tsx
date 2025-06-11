@@ -22,7 +22,7 @@ const stats = [
 
 export function StatsSection() {
   return (
-    <section className="py-16 px-10 md:px-20 mx-auto">
+    <section className="pb-16 pt-16 md:pt-32 px-10 md:px-20 mx-auto">
       <div className="grid md:grid-cols-3 gap-6">
         {stats.map((stat, index) => (
           <Card key={index} className="transition hover:scale-[1.02] bg-gray-50 dark:bg-gray-900 shadow-md border border-emerald-200 dark:border-emerald-800">
