@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Sun, Moon } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { FaCode } from "react-icons/fa6";
 
 interface NavbarProps {
   isDarkMode: boolean;
@@ -24,7 +25,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-white/80 dark:bg-black/65 backdrop-blur-md py-4 px-6 shadow-sm flex justify-between items-center">
-        <h1 className="text-xl font-bold text-emerald-800 dark:text-emerald-400">Raihan</h1>
+        <h1 className="text-xl font-bold text-emerald-800 dark:text-emerald-400"><FaCode/></h1>
 
         <div className="flex items-center gap-2">
           {/* Dark Mode Toggle */}
@@ -35,6 +36,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-4">
             <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
+            <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("experience")}>Experience</Button>
             <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>
             <Button className="cursor-pointer" variant="ghost" onClick={() => scrollToSection("contact")}>Contact</Button>
           </div>
@@ -57,6 +59,7 @@ export function Navbar({ isDarkMode, toggleDarkMode }: NavbarProps) {
             className="fixed top-[64px] left-0 w-full bg-white/80 dark:bg-black/65 z-40 shadow-md flex flex-col items-center gap-4 py-4 md:hidden"
           >
             <Button variant="ghost" onClick={() => scrollToSection("about")}>About</Button>
+            <Button variant="ghost" onClick={() => scrollToSection("experience")}>Experience</Button>
             <Button variant="ghost" onClick={() => scrollToSection("projects")}>Projects</Button>
             <Button variant="ghost" onClick={() => scrollToSection("contact")}>Contact</Button>
           </motion.div>

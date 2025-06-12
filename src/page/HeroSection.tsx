@@ -44,10 +44,10 @@ useEffect(() => {
             animate ? "opacity-100" : "opacity-0"
           }`}
         >
-          <div className={`absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r py-4 ${gradientClass} [text-shadow:0_0_rgba(0,0,0,0.1)]`}>
+          <div className={`absolute left-0 top-[1px] bg-clip-text bg-no-repeat text-transparent bg-gradient-to-r pb-3 md:pb-4 pt-1 md:pt-4 ${gradientClass} [text-shadow:0_0_rgba(0,0,0,0.1)]`}>
             <span className="">Fullstack Developer</span>
           </div>
-          <div className={`relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r ${gradientClass} py-4`}>
+          <div className={`relative bg-clip-text text-transparent bg-no-repeat bg-gradient-to-r ${gradientClass} pb-3 md:pb-4 pt-1 md:pt-4`}>
             <span className="">Fullstack Developer</span>
           </div>
         </div>
@@ -55,11 +55,11 @@ useEffect(() => {
         
 
 
-        <div className="w-full max-w-md h-32 sm:h-36 md:h-40 relative mx-auto px-4 mt-2">
+        <div className="w-full max-w-md h-32 sm:h-36 md:h-40 relative mx-auto mt-2">
           {/* Gradients */}
           <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-[2px] w-3/4 blur-sm" />
           <div className="absolute inset-x-10 top-0 bg-gradient-to-r from-transparent via-emerald-500 to-transparent h-px w-3/4" />
-          <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-[5px] w-1/4 blur-sm" />
+          <div className="absolute inset-x-1/2 transform -translate-x-1/2 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-[5px] w-1/4 blur-sm" />
           <div className="absolute inset-x-40 top-0 bg-gradient-to-r from-transparent via-green-500 to-transparent h-px w-1/4" />
 
           {/* Core Sparkles */}
@@ -68,7 +68,7 @@ useEffect(() => {
             minSize={0.4}
             maxSize={1}
             particleDensity={1200}
-            className="w-full h-full"
+            className="w-full h-full mx-auto"
             particleColor={isDarkMode ? colors.light : colors.dark}
           />
 
