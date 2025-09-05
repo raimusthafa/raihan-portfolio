@@ -35,6 +35,12 @@ export function AboutSection() {
             >
               React,
             </LinkPreview>
+            <LinkPreview
+              url="https://nextjs.org/"
+              className="ml-1 mr-1 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+            >
+              Nextjs,
+            </LinkPreview>
             and
             <LinkPreview
               url="https://flutter.dev/"

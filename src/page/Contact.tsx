@@ -58,13 +58,19 @@ export default function Contact() {
             url="https://www.instagram.com/mk.raihan_?igsh=MTFwenB5cHJlMWZxcg%3D%3D"
             className="ml-1 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
           >
-            Instagram &
+            Instagram
           </LinkPreview>
           <LinkPreview
             url="https://github.com/raimusthafa"
             className="ml-1 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
           >
             Github
+          </LinkPreview>
+          <LinkPreview
+            url="https://www.linkedin.com/in/raihan-musthafa-kamal/"
+            className="ml-1 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+          >
+            Linkedin
           </LinkPreview>
            </p>
         </div>
