@@ -3,6 +3,7 @@ import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
 import { SiNextdotjs, SiReact, SiTailwindcss, SiCss3, SiTypescript, SiShadcnui   } from "react-icons/si";
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { FaLaravel } from "react-icons/fa";
+import LinearCardDialog from "@/components/Tes/Cardui";
 
 const projects = [
   {
@@ -91,6 +92,7 @@ export function ProjectsSection() {
           </CardContainer>
         ))}
       </div>
+      <LinearCardDialog/>
     </section>
   );
 }
