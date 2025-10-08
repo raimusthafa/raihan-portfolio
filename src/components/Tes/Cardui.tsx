@@ -1,6 +1,6 @@
 'use client';
 import { motion, AnimatePresence, MotionConfig, type Transition } from 'motion/react';
-import { Plus, X } from 'lucide-react';
+import { ArrowUpRight, X } from 'lucide-react';
 import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 
@@ -36,23 +36,21 @@ const LinearCardDialog: React.FC = () => {
       title: 'Sweet Bakery',
       description:
         'A web application for a bakery business to manage menu, orders, and customer interactions.',
-      tags: ['Sunrise', 'Mountains', 'Golden', 'Scenic', 'Inspiring'],
+      tags: ['React', 'Tailwind', 'Antd', 'Laravel', 'Typescript'],
     },
     {
       id: 2,
-      url: 'https://images.unsplash.com/photo-1756806983725-977bb2308d4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Globe Section',
-      description:
-        'Embark on a virtual journey around the world with our state-of-the-art 3D globe feature...',
-      tags: ['Misty', 'Path', 'Mysterious', 'Serene', 'Rugged'],
+      url: '/task.jpg',
+      title: "Task Management",
+      description: "A modern task management app built with Next.js and Shadcn UI to track productivity effectively.",
+      tags: ['Next', 'Typescript', 'Shacdn', 'Tailwind'],
     },
     {
       id: 3,
-      url: 'https://images.unsplash.com/photo-1756806983832-1f056cf24182?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'Image Mouse Trail',
-      description:
-        'Transform your browsing experience with our mesmerizing Image Mouse Trail feature...',
-      tags: ['Pathway', 'Adventure', 'Peaks', 'Challenging', 'Breathtaking'],
+      url: '/uks.jpg',
+      title: 'Usaha Kesehatan Sekolah',
+       description: "A school health management system that records and monitors student health activities.",
+      tags: ['Laravel', 'Sql', 'Css', 'Javascript'],
     },
   ];
 
@@ -151,7 +149,7 @@ const LinearCardDialog: React.FC = () => {
                   aria-label={`Open ${item.title}`}
                   tabIndex={-1}
                 >
-                  <Plus className="w-4 h-4" />
+                  <ArrowUpRight className="w-4 h-4" />
                 </button>
               </div>
             </motion.div>
@@ -222,7 +220,7 @@ const LinearCardDialog: React.FC = () => {
                 </div>
                 <button
                   onClick={handleCloseDialog}
-                  className="absolute right-4 top-4 p-2 bg-black dark:bg-white rounded-lg text-primary-foreground border cursor-pointer transition-colors"
+                  className="absolute right-4 top-4 p-2 bg-white dark:bg-black rounded-lg text-black dark:text-white border cursor-pointer transition-colors"
                   type="button"
                   aria-label={`Close ${currentItem.title} dialog`}
                 >
