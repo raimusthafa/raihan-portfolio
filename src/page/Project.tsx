@@ -4,6 +4,7 @@ import { SiNextdotjs, SiReact, SiTailwindcss, SiCss3, SiTypescript, SiShadcnui  
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { FaLaravel } from "react-icons/fa";
 import LinearCardDialog from "@/components/Tes/Cardui";
+import { DockDemo } from "@/components/Tes/Dock";
 
 const projects = [
   {
@@ -93,6 +94,7 @@ export function ProjectsSection() {
         ))}
       </div>
       {/* <LinearCardDialog/> */}
+      {/* <DockDemo/> */}
     </section>
   );
 }
