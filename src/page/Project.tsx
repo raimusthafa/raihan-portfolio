@@ -92,7 +92,7 @@ export function ProjectsSection() {
           </CardContainer>
         ))}
       </div>
-      <LinearCardDialog/>
+      {/* <LinearCardDialog/> */}
     </section>
   );
 }
