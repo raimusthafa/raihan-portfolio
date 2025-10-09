@@ -4,8 +4,6 @@ import { SiNextdotjs, SiReact, SiTailwindcss, SiCss3, SiTypescript, SiShadcnui  
 import { AiOutlineAntDesign } from "react-icons/ai";
 import { FaLaravel } from "react-icons/fa";
 import LinearCardDialog from "@/components/Tes/Cardui";
-import { DockDemo } from "@/components/Tes/Dock";
-
 const projects = [
   {
     title: "Sweet Bakery",
@@ -47,7 +45,7 @@ export function ProjectsSection() {
   return (
     <section id="projects" className="py-16 px-4 md:px-20 mx-auto">
       <h2 className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">I love building things</h2>
-      <div className="grid md:grid-cols-3 md:gap-8">
+      {/* <div className="grid md:grid-cols-3 md:gap-8">
         {projects.map((project, index) => (
           <CardContainer key={index} className="inter-var">
             <CardBody className=" bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-gray-900 dark:border-white/[0.2] border-black/[0.1] w-full h-full rounded-xl p-6 border border-emerald-200 dark:border-emerald-800">
@@ -92,9 +90,9 @@ export function ProjectsSection() {
             </CardBody>
           </CardContainer>
         ))}
-      </div>
-      {/* <LinearCardDialog/> */}
-      {/* <DockDemo/> */}
+      </div> */}
+      <LinearCardDialog/>
+
     </section>
   );
 }

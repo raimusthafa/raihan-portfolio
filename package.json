@@ -25,7 +25,7 @@
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.511.0",
     "mini-svg-data-uri": "^1.4.4",
-    "motion": "^12.12.1",
+    "motion": "^12.23.22",
     "qss": "^3.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
