@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Footer } from "./components/Footer";
-import { Navbar } from "./components/Navbar";
+// import { Navbar } from "./components/Navbar";
 import { AboutSection } from "./page/About";
 import { HeroSection } from "./page/HeroSection";
 import { ProjectsSection } from "./page/Project";
@@ -9,7 +9,7 @@ import ContactSection from "./page/Contact";
 import { Toaster } from "react-hot-toast";
 import Experience from "./page/Experience";
 import { DockDemo } from "./components/Tes/Dock";
-import LinearCard from "./components/Tes/Linearmodal";
+// import LinearCard from "./components/Tes/Linearmodal";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);

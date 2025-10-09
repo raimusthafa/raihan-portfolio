@@ -1,6 +1,6 @@
-import React from "react"
+// import React from "react"
 import { Dock, DockIcon } from "../ui/dock"
-import { Moon, Sun } from "lucide-react"
+// import { Moon, Sun } from "lucide-react"
 
 interface DockDemoProps {
   isDarkMode: boolean;

@@ -1,44 +1,44 @@
 "use client";
-import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
-import { SiNextdotjs, SiReact, SiTailwindcss, SiCss3, SiTypescript, SiShadcnui   } from "react-icons/si";
-import { AiOutlineAntDesign } from "react-icons/ai";
-import { FaLaravel } from "react-icons/fa";
+// import { CardContainer, CardBody, CardItem } from "@/components/ui/3d-card";
+// import { SiNextdotjs, SiReact, SiTailwindcss, SiCss3, SiTypescript, SiShadcnui   } from "react-icons/si";
+// import { AiOutlineAntDesign } from "react-icons/ai";
+// import { FaLaravel } from "react-icons/fa";
 import LinearCardDialog from "@/components/Tes/Cardui";
-const projects = [
-  {
-    title: "Sweet Bakery",
-    description: "A web application for a bakery business to manage menu, orders, and customer interactions.",
-    imageUrl: "/bakery.jpg",
-    tech: [
-      <SiReact key="react" />,
-      <SiTailwindcss key="tailwind" />,
-      <AiOutlineAntDesign  key="antd" />, 
-      <FaLaravel key="laravel" />, 
-      <SiTypescript  key="ts" />, 
-    ],
-  },
-  {
-    title: "Task Management",
-    description: "A modern task management app built with Next.js and Shadcn UI to track productivity effectively.",
-    imageUrl: "/task.jpg",
-    tech: [
-      <SiNextdotjs key="next" />,
-      <SiReact key="react" />,
-      <SiTailwindcss key="tailwind" />,
-      <SiTypescript key="ts" />,
-      <SiShadcnui  key="shadcn" />,
-    ],
-  },
-  {
-    title: "Usaha Kesehatan Sekolah",
-    description: "A school health management system that records and monitors student health activities.",
-    imageUrl: "/uks.jpg",
-    tech: [
-      <FaLaravel key="laravel" />,
-      <SiCss3 key="css" />,
-    ],
-  },
-];
+// const projects = [
+//   {
+//     title: "Sweet Bakery",
+//     description: "A web application for a bakery business to manage menu, orders, and customer interactions.",
+//     imageUrl: "/bakery.jpg",
+//     tech: [
+//       <SiReact key="react" />,
+//       <SiTailwindcss key="tailwind" />,
+//       <AiOutlineAntDesign  key="antd" />, 
+//       <FaLaravel key="laravel" />, 
+//       <SiTypescript  key="ts" />, 
+//     ],
+//   },
+//   {
+//     title: "Task Management",
+//     description: "A modern task management app built with Next.js and Shadcn UI to track productivity effectively.",
+//     imageUrl: "/task.jpg",
+//     tech: [
+//       <SiNextdotjs key="next" />,
+//       <SiReact key="react" />,
+//       <SiTailwindcss key="tailwind" />,
+//       <SiTypescript key="ts" />,
+//       <SiShadcnui  key="shadcn" />,
+//     ],
+//   },
+//   {
+//     title: "Usaha Kesehatan Sekolah",
+//     description: "A school health management system that records and monitors student health activities.",
+//     imageUrl: "/uks.jpg",
+//     tech: [
+//       <FaLaravel key="laravel" />,
+//       <SiCss3 key="css" />,
+//     ],
+//   },
+// ];
 
 
 export function ProjectsSection() {
