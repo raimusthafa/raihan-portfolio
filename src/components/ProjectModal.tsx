@@ -217,7 +217,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
                         key={index}
                         className="flex items-center gap-2 px-3 py-2 bg-gray-100 dark:bg-gray-800 rounded-lg"
                       >
-                        <span className="text-xl">{project.tech[index]}</span>
+                        <span className="text-xl dark:text-white">{project.tech[index]}</span>
                         <span className="text-sm text-gray-700 dark:text-gray-300">
                           {tech}
                         </span>
