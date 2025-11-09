@@ -22,11 +22,11 @@ export function AboutSection() {
             <Card className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 shadow-xl border border-emerald-200 dark:border-emerald-800">
               <CardHeader className="flex flex-row items-start gap-6 pb-4">
                 <Avatar className="w-20 h-20 ring-4 ring-emerald-200 dark:ring-emerald-800">
-                  <AvatarImage src="/me.jpg" alt="My profile" />
-                  <AvatarFallback>SM</AvatarFallback>
+                  <AvatarImage src="/me4.jpeg" alt="My profile" />
+                  <AvatarFallback>RMK</AvatarFallback>
                 </Avatar>
                 <div>
-                  <CardTitle className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
+                  <CardTitle className="text-2xl font-bold text-gray-800 dark:text-white">
                     Software Engineering Student
                   </CardTitle>
                   <p className="text-gray-500 dark:text-gray-400 text-sm">Telkom University</p>
