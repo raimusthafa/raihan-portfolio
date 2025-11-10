@@ -3,7 +3,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail, Instagram } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 import { motion } from "motion/react";
 
 export function HeroSection({ isDarkMode }: { isDarkMode: boolean }) {
