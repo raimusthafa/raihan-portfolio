@@ -3,7 +3,7 @@ import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-w
 import { SparklesCore } from "@/components/ui/sparkles";
 import { Spotlight } from "@/components/ui/spotlight-new";
 import { useEffect, useState } from "react";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Instagram } from "lucide-react";
 import { motion } from "motion/react";
 
 export function HeroSection({ isDarkMode }: { isDarkMode: boolean }) {
@@ -108,7 +108,7 @@ useEffect(() => {
           className="flex justify-center gap-4 mt-6"
         >
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/raimusthafa"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
@@ -116,7 +116,7 @@ useEffect(() => {
             <Github className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
           </a>
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://linkedin.com/in/raihan-musthafa-kamal"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
@@ -124,10 +124,12 @@ useEffect(() => {
             <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="https://instagram.com/mk.raihan_"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
           >
-            <Mail className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
+            <Instagram className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
           </a>
         </motion.div>
       </div>
