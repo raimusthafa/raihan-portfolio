@@ -8,6 +8,7 @@ import ContactSection from "./page/Contact";
 import { Toaster } from "react-hot-toast";
 import Experience from "./page/Experience";
 import { DockDemo } from "./components/Tes/Dock";
+import { Navbar } from "./components/Navbar";
 
 
 function App() {
@@ -41,8 +42,8 @@ function App() {
 
   return (
     <div className="bg-[#f3fdf6] text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen">
-      {/* <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} /> */}
-      <DockDemo isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} />
+      {/* <DockDemo isDarkMode={isDarkMode} toggleDarkMode={() => setIsDarkMode(!isDarkMode)} /> */}
       <main>
         <HeroSection isDarkMode={isDarkMode} />
         {/* <LinearCard/> */}
