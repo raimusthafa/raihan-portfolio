@@ -7,7 +7,6 @@ import { StatsSection } from "./page/Stats";
 import ContactSection from "./page/Contact";
 import { Toaster } from "react-hot-toast";
 import Experience from "./page/Experience";
-import { DockDemo } from "./components/Tes/Dock";
 import { Navbar } from "./components/Navbar";
 
 
