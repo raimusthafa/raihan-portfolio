@@ -89,10 +89,10 @@ function CounterAnimation({ target, suffix }: { target: number; suffix: string }
 
 export function StatsSection() {
   return (
-    <section className="relative pb-16 pt-16 md:pt-32 px-6 md:px-20 mx-auto overflow-hidden">
+    <section className="max-w-[85rem] relative pb-12 pt-10 md:pt-20 px-6 md:px-20 mx-auto overflow-hidden">
       {/* Background Decorations */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-300/20 dark:bg-emerald-600/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-300/20 dark:bg-purple-600/10 rounded-full blur-3xl"></div>
+      {/* <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-300/20 dark:bg-emerald-600/10 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-300/20 dark:bg-purple-600/10 rounded-full blur-3xl"></div> */}
 
       {/* Section Title */}
       <motion.div
@@ -102,7 +102,7 @@ export function StatsSection() {
         transition={{ duration: 0.6 }}
         className="text-center mb-12"
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3">
+        <h2 className="text-3xl md:text-4xl font-bold text-emerald-600 dark:text-emerald-400 mb-3">
           Stats & Achievements
         </h2>
         <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
@@ -126,8 +126,12 @@ export function StatsSection() {
                 {/* Gradient Overlay on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/5 via-transparent to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
-                <CardContent className="relative p-6 space-y-4">
+                <CardContent className="relative p-5 space-y-4">
                   {/* Icon */}
+                  <div className="flex justify-between">
+                  <div className={`${stat.color}`}>
+                    <CounterAnimation target={stat.number} suffix={stat.suffix} />
+                  </div>
                   <motion.div
                     whileHover={{ rotate: 360, scale: 1.1 }}
                     transition={{ duration: 0.6 }}
@@ -137,8 +141,6 @@ export function StatsSection() {
                   </motion.div>
 
                   {/* Counter */}
-                  <div className={`${stat.color}`}>
-                    <CounterAnimation target={stat.number} suffix={stat.suffix} />
                   </div>
 
                   {/* Title & Description */}

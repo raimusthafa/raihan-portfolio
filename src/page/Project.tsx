@@ -83,8 +83,8 @@ export function ProjectsSection() {
   };
 
   return (
-    <section id="projects" className="py-16 px-4 md:px-20 mx-auto">
-      <h2 className="text-3xl font-bold text-emerald-600 dark:text-emerald-400">I love building things</h2>
+    <section id="projects" className="py-12 px-4 md:px-20 mx-auto max-w-[85rem]">
+      <h2 className="text-4xl font-bold text-emerald-600 dark:text-emerald-400 text-center">I love building things</h2>
       <div className="grid md:grid-cols-3 md:gap-8">
         {projects.map((project, index) => (
           <CardContainer key={index} className="inter-var">
@@ -98,7 +98,7 @@ export function ProjectsSection() {
               <CardItem
                 as="p"
                 translateZ="60"
-                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300 line-clamp-2"
               >
                 {project.description}
               </CardItem>
