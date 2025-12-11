@@ -124,7 +124,7 @@ useEffect(() => {
             <Linkedin className="w-5 h-5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors" />
           </a>
           <a
-            href="https://instagram.com/mk.raihan_"
+            href="https://instagram.com/raiiemkaa"
             target="_blank"
             rel="noopener noreferrer"
             className="group p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 border border-gray-200 dark:border-gray-700"
