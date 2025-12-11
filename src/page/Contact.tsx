@@ -55,7 +55,7 @@ export default function Contact() {
 
           {/* Link Preview */}
           <LinkPreview
-            url="https://www.instagram.com/mk.raihan_?igsh=MTFwenB5cHJlMWZxcg%3D%3D"
+            url="https://www.instagram.com/raiiemkaa"
             className="ml-1 font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
           >
             Instagram
